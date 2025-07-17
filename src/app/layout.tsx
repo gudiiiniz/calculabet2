@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import {Poppins} from "next/font/google";
 import "./globals.css";
+import Header from "./components/custom/header";
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -8,7 +9,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Calcula Bet",
+  title: "CalculaBet",
   description: "Calculadora de apostas seguras.",
 };
 
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body
         className={`${poppins.className} antialiased`}
       >
+        <Header />
         {children}
       </body>
     </html>
