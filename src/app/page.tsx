@@ -1,10 +1,11 @@
-import Header from "./components/custom/header";
+import Calculator from "./calculator/page"
 
 export default function Home() {
 
   return (
     <>
     
+    <Calculator /> 
 
     
     
